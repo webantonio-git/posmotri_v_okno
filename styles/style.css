@@ -128,6 +128,7 @@ ol {
 }
 
 .content__card-link {
+  box-sizing: border-box;
   display: block;
   text-decoration: none;
   margin: 2px;
@@ -265,6 +266,11 @@ ol {
 }
 
 .button {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+
+  box-sizing: border-box;
   cursor: pointer;
   background: transparent;
   color: white;
@@ -309,36 +315,47 @@ ol {
   margin-right: 0.5px;
 }
 
+
 .more-button {
+  display:block;
+  align-self: center;
+  justify-self: center;
   width: 100%;
+  outline: 1px solid white;
+  position: relative;
+  box-sizing: border-box;
+
+  
 }
 
 .more-button:active {
+  display: inline-block;
   width: 100%;
   background-color: #545050;
 }
 
 .more-button:focus {
+  display: inline-block;
   outline: none;
-  z-index: 1;
 }
 
-.more-button:focus:not(:active)::before {
-  content: "";
+.more-button:focus-visible {
+  display: inline-block;
+  outline: 1px solid white;  
+}
+.more-button:focus-visible::after {
+  display: inline-block;
+  content: '';
   position: absolute;
   top: -5px;
-  left: -5px;
   right: -5px;
   bottom: -5px;
-  border: 1px solid white;
-  z-index: -2;
+  left: -5px;
+  border: 2px solid white;
+  z-index: -1;
 }
 
-.more-button:focus:not(:active) {
-  border: 1px solid white;
-  margin-left: 1px;
-  margin-right: 1px;
-}
+
 
 .visually-hidden {
   position: absolute;
