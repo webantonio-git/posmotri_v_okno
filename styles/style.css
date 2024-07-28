@@ -41,7 +41,6 @@ ol {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .content {
@@ -58,18 +57,17 @@ ol {
 .result {
   box-sizing: border-box;
   padding-top: 0;
-  
 }
 
 .result__video-container {
   display: flex;
-align-items: start;
+  align-items: start;
   box-sizing: border-box;
   padding-top: 18px;
   margin: 0;
   width: 711px;
   height: 386px;
-  position: relative; 
+  position: relative;
 }
 
 .result__video {
@@ -105,7 +103,6 @@ align-items: start;
   text-align: left;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
-
 }
 
 .content__details {
@@ -131,7 +128,6 @@ align-items: start;
 }
 
 .content__list {
-
   display: flex;
   width: 100%;
   height: 298px;
@@ -139,8 +135,6 @@ align-items: start;
   overflow: auto;
   position: relative;
 }
-
-
 
 .content__list-item:not(:last-child) {
   margin-bottom: 30px;
@@ -221,7 +215,6 @@ align-items: start;
   border: 0;
   padding-top: 0px;
   row-gap: 0px;
-  
 }
 
 .search-form__fieldset-title {
@@ -234,7 +227,6 @@ align-items: start;
   margin-top: 5px;
   justify-content: space-between;
   align-items: end;
-  
 }
 
 .search-form__checkbox-list {
@@ -244,19 +236,17 @@ align-items: start;
   justify-content: space-between;
   align-items: end;
   column-gap: 15px;
-  row-gap: 5px; 
-  
+  row-gap: 5px;
 }
 
 .search-form__label {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
   border: 0;
   width: fit-content;
   margin: 0;
-  
 }
 
 .search-form__label:has(.search-form__textfield:focus-visible) {
