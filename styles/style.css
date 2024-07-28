@@ -41,11 +41,12 @@ ol {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .content {
   box-sizing: border-box;
-  padding-top: 0px;
+  padding-top: 20px;
   width: 1140px;
   display: flex;
   flex-direction: row;
@@ -60,6 +61,8 @@ ol {
 
 .result__video-container {
   box-sizing: border-box;
+  padding-top: 10px;
+  margin: 0;
   width: 711px;
   height: 386px;
   position: relative;
@@ -128,8 +131,10 @@ ol {
   position: relative;
 }
 
+
+
 .content__list-item:not(:last-child) {
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
 .content__card-link {
@@ -141,6 +146,10 @@ ol {
 
 .content__card-link:focus {
   outline: none;
+}
+
+.content__card-link:active {
+  background-color: #545050;
 }
 
 .content__card-link:focus-visible {
@@ -197,12 +206,14 @@ ol {
 .search-form__fieldset {
   box-sizing: border-box;
   border: 0;
+  padding-top: 4px;
 }
 
 .search-form__fieldset-title {
+  box-sizing: border-box;
   font-size: 18px;
   font-weight: 400;
-  margin-bottom: 4px;
+  PADDING-BOTTOM: 6px;
 }
 
 .search-form__checkbox-list {
@@ -217,7 +228,7 @@ ol {
   justify-content: space-between;
   border: 0;
   width: fit-content;
-  padding: 0.1rem;
+  margin-top: 0px;
 }
 
 .search-form__label:has(.search-form__textfield:focus-visible) {
@@ -253,6 +264,12 @@ ol {
   width: 15px;
   height: 15px;
   background-color: white;
+}
+
+.search-form__label:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  cursor: pointer;
 }
 
 .search-form__label-text {
