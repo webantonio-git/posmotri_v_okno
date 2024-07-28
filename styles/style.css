@@ -213,7 +213,8 @@ ol {
   box-sizing: border-box;
   font-size: 18px;
   font-weight: 400;
-  PADDING-BOTTOM: 6px;
+  PADDING-top: 6px;
+  padding-bottom: 5px;
 }
 
 .search-form__checkbox-list {
