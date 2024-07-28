@@ -62,6 +62,8 @@ ol {
 }
 
 .result__video-container {
+  display: flex;
+align-items: start;
   box-sizing: border-box;
   padding-top: 18px;
   margin: 0;
@@ -71,6 +73,8 @@ ol {
 }
 
 .result__video {
+  display: block;
+  align-self: start;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -108,7 +112,7 @@ ol {
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: 2px;
+  gap: 7px;
 }
 
 .title {
@@ -127,6 +131,7 @@ ol {
 }
 
 .content__list {
+
   display: flex;
   width: 100%;
   height: 298px;
@@ -138,14 +143,14 @@ ol {
 
 
 .content__list-item:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .content__card-link {
   box-sizing: border-box;
   display: block;
   text-decoration: none;
-  margin: 2px;
+  margin-top: 0px;
 }
 
 .content__card-link:focus {
@@ -185,8 +190,8 @@ ol {
 .content__video-card-thumbnail {
   padding-top: 2px;
   padding-bottom: 2px;
-  width: 194px;
-  min-height: 92px;
+  width: 200px;
+  height: 105px;
 }
 
 .content__video-card-title {
@@ -216,17 +221,20 @@ ol {
   border: 0;
   padding-top: 0px;
   row-gap: 0px;
-  margin: 0;
+  
 }
 
 .search-form__fieldset-title {
+  display: flex;
   box-sizing: border-box;
   font-size: 18px;
   font-weight: 400;
   padding-top: 6px;
-  padding-bottom: 4px;
-  margin-top: 0px;
-  justify-self: center;
+  padding-bottom: 5px;
+  margin-top: 5px;
+  justify-content: space-between;
+  align-items: end;
+  
 }
 
 .search-form__checkbox-list {
@@ -234,6 +242,7 @@ ol {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: end;
   column-gap: 15px;
   row-gap: 5px; 
   
@@ -242,7 +251,8 @@ ol {
 .search-form__label {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-between; 
+  align-items: center;
   border: 0;
   width: fit-content;
   margin: 0;
@@ -264,14 +274,15 @@ ol {
 }
 
 .search-form__pseudo-checkbox {
-  display: inline-flex;
-  justify-content: center;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   width: 19px;
   height: 19px;
   border: 1px solid white;
   font-size: 18px;
   position: relative;
+  margin-bottom: 0px;
 }
 
 .search-form__pseudo-checkbox:active::after {
@@ -295,7 +306,7 @@ ol {
   box-sizing: border-box;
   margin-left: 5px;
   margin-bottom: 4px;
-  padding-bottom: 0;
+  padding-bottom: 0px;
 }
 
 .search-form__label-text:hover {
