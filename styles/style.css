@@ -46,7 +46,7 @@ ol {
 
 .content {
   box-sizing: border-box;
-  padding-top: 20px;
+  padding-top: 10px;
   width: 1140px;
   display: flex;
   flex-direction: row;
@@ -57,15 +57,17 @@ ol {
 
 .result {
   box-sizing: border-box;
+  padding-top: 0;
+  
 }
 
 .result__video-container {
   box-sizing: border-box;
-  padding-top: 10px;
+  padding-top: 18px;
   margin: 0;
   width: 711px;
   height: 386px;
-  position: relative;
+  position: relative; 
 }
 
 .result__video {
@@ -77,14 +79,16 @@ ol {
 
 .search-form {
   box-sizing: border-box;
-  padding-top: 16px;
+  margin-top: 0px;
+  padding-top: 25px;
   display: flex;
   justify-content: space-between;
   align-items: end;
+  row-gap: 10px;
 }
 
 .search-form__textfield {
-  padding: 0;
+  padding: 2px;
   outline: none;
   appearance: none;
   width: 225px;
@@ -97,7 +101,7 @@ ol {
   text-align: left;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
-  padding-top: 1px;
+
 }
 
 .content__details {
@@ -204,23 +208,35 @@ ol {
 }
 
 .search-form__fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
   box-sizing: border-box;
   border: 0;
-  padding-top: 4px;
+  padding-top: 0px;
+  row-gap: 0px;
+  margin: 0;
 }
 
 .search-form__fieldset-title {
   box-sizing: border-box;
   font-size: 18px;
   font-weight: 400;
-  PADDING-top: 6px;
-  padding-bottom: 5px;
+  padding-top: 6px;
+  padding-bottom: 4px;
+  margin-top: 0px;
+  justify-self: center;
 }
 
 .search-form__checkbox-list {
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  gap: 15px;
+  justify-content: space-between;
+  column-gap: 15px;
+  row-gap: 5px; 
+  
 }
 
 .search-form__label {
@@ -229,7 +245,8 @@ ol {
   justify-content: space-between;
   border: 0;
   width: fit-content;
-  margin-top: 0px;
+  margin: 0;
+  
 }
 
 .search-form__label:has(.search-form__textfield:focus-visible) {
@@ -274,8 +291,11 @@ ol {
 }
 
 .search-form__label-text {
-  display: inline-block;
+  display: block;
+  box-sizing: border-box;
   margin-left: 5px;
+  margin-bottom: 4px;
+  padding-bottom: 0;
 }
 
 .search-form__label-text:hover {
@@ -323,13 +343,15 @@ ol {
 }
 
 .search-form__submit-button {
+  box-sizing: border-box;
+  margin: 0;
   display: inline-block;
-  align-self: end;
+  align-self: flex-end;
   width: 194px;
   position: relative;
   border: 1px solid white;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 2px;
+  padding-bottom: 0px;
 }
 
 .search-form__submit-button:active {
