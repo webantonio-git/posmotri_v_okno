@@ -172,12 +172,11 @@ ol {
 .content__video-card {
   display: flex;
   flex-direction: row;
- }
+}
 
 .content__video-card-description-container {
   display: inline-block;
   width: 100%;
- 
 }
 
 .content__video-card-thumbnail {
@@ -198,7 +197,6 @@ ol {
   overflow: hidden;
   text-overflow: ellipsis;
   padding-left: 3px;
-
 }
 
 .content__video-card-description {
