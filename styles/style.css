@@ -172,13 +172,12 @@ ol {
 .content__video-card {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-}
+ }
 
 .content__video-card-description-container {
-  box-sizing: border-box;
   display: inline-block;
   width: 100%;
+ 
 }
 
 .content__video-card-thumbnail {
@@ -198,12 +197,15 @@ ol {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding-left: 3px;
+
 }
 
 .content__video-card-description {
   color: white;
   font-size: 18px;
   line-height: 1.162;
+  padding-left: 3px;
 }
 
 .search-form__fieldset {
@@ -382,16 +384,23 @@ ol {
   margin-right: 0.5px;
 }
 
+.more-button-template {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .more-button {
+  margin-left: 4px;
   display: block;
   align-self: center;
   justify-self: center;
-  width: 99%;
+  width: 97.5%;
   outline: 1px solid white;
   position: relative;
   box-sizing: border-box;
 }
-
 .more-button:active {
   display: inline-block;
   width: 100%;
