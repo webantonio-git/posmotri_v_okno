@@ -401,7 +401,7 @@ ol {
 }
 .more-button:active {
   display: inline-block;
-  width: 100%;
+  width: 97.5%;
   background-color: #545050;
 }
 
