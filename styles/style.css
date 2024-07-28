@@ -41,7 +41,6 @@ ol {
   display: flex;
   justify-content: center;
   align-items: center;
- 
 }
 
 .content {
@@ -55,7 +54,7 @@ ol {
   gap: 30px;
 }
 
-.rezult {
+.result {
   box-sizing: border-box;
 }
 
@@ -127,7 +126,6 @@ ol {
   flex-direction: column;
   overflow: auto;
   position: relative;
-  
 }
 
 .content__list-item:not(:last-child) {
@@ -138,7 +136,7 @@ ol {
   box-sizing: border-box;
   display: block;
   text-decoration: none;
-  margin: 2px; 
+  margin: 2px;
 }
 
 .content__card-link:focus {
@@ -169,7 +167,7 @@ ol {
   box-sizing: border-box;
   display: inline-block;
   width: 100%;
- }
+}
 
 .content__video-card-thumbnail {
   padding-top: 2px;
@@ -180,6 +178,7 @@ ol {
 
 .content__video-card-title {
   display: block;
+  max-width: 200px;
   font-family: "Oswald", sans-serif;
   color: white;
   font-size: 30px;
@@ -283,7 +282,7 @@ ol {
 .search-form__label:has(.search-form__checkbox:focus-visible) {
   align-self: center;
   outline: 1px solid white;
-  padding-top: 2.8px;  
+  padding-top: 2.8px;
 }
 
 .button {
@@ -342,15 +341,14 @@ ol {
   margin-right: 0.5px;
 }
 
-
 .more-button {
-  display:block;
+  display: block;
   align-self: center;
   justify-self: center;
-  width: 100%;
+  width: 99%;
   outline: 1px solid white;
   position: relative;
-  box-sizing: border-box;  
+  box-sizing: border-box;
 }
 
 .more-button:active {
@@ -366,11 +364,11 @@ ol {
 
 .more-button:focus-visible {
   display: inline-block;
-  outline: 1px solid white;  
+  outline: 1px solid white;
 }
 .more-button:focus-visible::after {
   display: inline-block;
-  content: '';
+  content: "";
   position: absolute;
   top: -5px;
   right: -5px;
@@ -379,8 +377,6 @@ ol {
   border: 2px solid white;
   z-index: -1;
 }
-
-
 
 .visually-hidden {
   position: absolute;
