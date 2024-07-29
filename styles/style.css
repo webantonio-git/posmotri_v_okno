@@ -63,10 +63,10 @@ ol {
   display: flex;
   align-items: start;
   box-sizing: border-box;
-  padding-top: 18px;
+
   margin: 0;
   width: 711px;
-  height: 386px;
+  max-height: 387px;
   position: relative;
 }
 
@@ -82,7 +82,7 @@ ol {
 .search-form {
   box-sizing: border-box;
   margin-top: 0px;
-  padding-top: 25px;
+  padding-top: 16px;
   display: flex;
   justify-content: space-between;
   align-items: end;
@@ -182,8 +182,8 @@ ol {
 .content__video-card-thumbnail {
   padding-top: 2px;
   padding-bottom: 2px;
-  min-width: 200px;
-  height: 105px;
+  min-width: 194px;
+  height: 103px;
 }
 
 .content__video-card-title {
@@ -196,7 +196,7 @@ ol {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding-left: 3px;
+  line-height: 100%;
 }
 
 .content__video-card-description {
@@ -222,9 +222,9 @@ ol {
   box-sizing: border-box;
   font-size: 18px;
   font-weight: 400;
-  padding-top: 6px;
+
   padding-bottom: 5px;
-  margin-top: 5px;
+
   justify-content: space-between;
   align-items: end;
 }
@@ -237,6 +237,11 @@ ol {
   align-items: end;
   column-gap: 15px;
   row-gap: 5px;
+}
+
+.search-form__checkbox-list:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .search-form__label {
@@ -255,17 +260,20 @@ ol {
 
 .search-form__textfield:active {
   outline: 1px solid white;
-  border-top: 0;
-  border-bottom: 0;
 }
 
 .search-form__textfield:focus {
   outline: 0;
 }
 
+.search-form__textfield:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .search-form__pseudo-checkbox {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 19px;
   height: 19px;
@@ -279,20 +287,18 @@ ol {
   box-sizing: border-box;
   content: "";
   display: block;
-  padding-top: 4px;
+
   width: 15px;
   height: 15px;
   background-color: white;
 }
 
 .search-form__label:hover {
-  text-decoration: underline;
-  text-underline-offset: 4px;
   cursor: pointer;
 }
 
 .search-form__label-text {
-  display: block;
+  display: flex;
   box-sizing: border-box;
   margin-left: 5px;
   margin-bottom: 4px;
@@ -319,9 +325,11 @@ ol {
 }
 
 .search-form__label:has(.search-form__checkbox:focus-visible) {
-  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   outline: 1px solid white;
-  padding-top: 2.8px;
 }
 
 .button {
@@ -341,6 +349,17 @@ ol {
 
 .button:hover {
   text-decoration: underline;
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.button:focus {
+  display: inline-block;
+  outline: none;
+  z-index: 1;
 }
 
 .search-form__submit-button {
@@ -355,31 +374,19 @@ ol {
   padding-bottom: 0px;
 }
 
-.search-form__submit-button:active {
-  width: 194px;
-  background-color: #545050;
-}
-
-.search-form__submit-button:focus {
-  outline: none;
-  z-index: 1;
-}
-
-.search-form__submit-button:focus:not(:active)::before {
+.button:focus:not(:active)::before {
   content: "";
   position: absolute;
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
-  border: 1px solid white;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  outline: 1px solid white;
   z-index: -2;
 }
 
-.search-form__submit-button:focus:not(:active) {
+.button:focus:not(:active) {
   border: 1px solid white;
-  margin-left: 0.5px;
-  margin-right: 0.5px;
 }
 
 .more-button-template {
@@ -390,6 +397,7 @@ ol {
 }
 
 .more-button {
+  box-sizing: border-box;
   margin-left: 4px;
   display: block;
   align-self: center;
@@ -398,32 +406,7 @@ ol {
   outline: 1px solid white;
   position: relative;
   box-sizing: border-box;
-}
-.more-button:active {
-  display: inline-block;
-  width: 97.5%;
-  background-color: #545050;
-}
-
-.more-button:focus {
-  display: inline-block;
-  outline: none;
-}
-
-.more-button:focus-visible {
-  display: inline-block;
-  outline: 1px solid white;
-}
-.more-button:focus-visible::after {
-  display: inline-block;
-  content: "";
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  bottom: -5px;
-  left: -5px;
-  border: 2px solid white;
-  z-index: -1;
+  border: 1px;
 }
 
 .visually-hidden {
